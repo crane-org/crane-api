@@ -8,8 +8,8 @@ import (
 
 func TestGetCurrentDirectory(t *testing.T) {
 	dir := getCurrentDirectory()
-	if !strings.HasSuffix(dir, "/papercrane/crane-be/utils") {
-		t.Errorf("current dir %s does not end with /papercrane/utils", dir)
+	if !strings.HasSuffix(dir, "/crane-api/utils") {
+		t.Errorf("current dir %s does not end with /crane-api/utils", dir)
 	}
 }
 

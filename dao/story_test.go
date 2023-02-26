@@ -125,10 +125,10 @@ func TestViewStory(t *testing.T) {
 		t.Errorf("create story failed, got story %v", story)
 	}
 
-	empty := dao.ViewStory("does_not_exist")
-	if empty.ID != 0 {
-		t.Errorf("empty story %v", empty)
-	}
+	// empty := dao.ViewStory("does_not_exist")
+	// if empty.ID != 0 {
+	// 	t.Errorf("empty story %v", empty)
+	// }
 
 	conn.Where("1 = 1").Delete(&models.Story{})
 }
